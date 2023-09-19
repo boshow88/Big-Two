@@ -1,16 +1,10 @@
-#include "cuda_runtime.h"
-#include "device_launch_parameters.h"
-#include <cuda.h>
-#include <cuda_runtime_api.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 #include <bits/stdc++.h>
-#include <cooperative_groups.h>
 #include <ncurses.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
-#include <chrono>
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 #define STEP_UP  true
 #define TIME_LM 20000
@@ -28,8 +22,6 @@ short   BTN_Y = (WIN_HEI >> 1) - 8;
 
 using namespace std;
 using namespace std::chrono;
-using namespace cooperative_groups;
-namespace cg = cooperative_groups;
 
 string int2str(long long int_in) {
 	stringstream ss;
